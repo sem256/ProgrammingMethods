@@ -7,7 +7,7 @@ namespace Decorator1
 {
     class PrimaryText : Component// конкретний клас з текстом
     {
-        public PrimaryText(string text)
+        public PrimaryText(string text)//конструктор який приймажє текс який буде декорований
         {
             base.text = text;
         }

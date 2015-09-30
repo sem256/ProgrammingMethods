@@ -15,10 +15,10 @@ namespace Decorator1
             Component = component;
         }
 
-        public override string  ViewText()
+        public override string  ViewText()//перевизначаємо метод, щоб відповідав класу
         {
             if (Component.ViewText().Contains(addUnderLineText))
-                return Component.ViewText();
+                return Component.ViewText().Replace(addUnderLineText,"");
             return Component.ViewText() + addUnderLineText;
         }
         public override string ToString()

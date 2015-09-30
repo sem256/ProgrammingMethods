@@ -16,10 +16,10 @@ namespace Decorator1
             Component = component;
         }
 
-        public override string  ViewText()
+        public override string ViewText()//перевизначаємо метод, щоб відповідав класу
         {
             if (Component.ViewText().Contains(addUpperCaseText))
-                return Component.ViewText();
+                return Component.ViewText().Replace(addUpperCaseText, "");
             return Component.ViewText() + addUpperCaseText;
         }
 

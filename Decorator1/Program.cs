@@ -13,9 +13,9 @@ namespace Decorator1
         }
         static void Main(string[] args)
         {
-            Component primaryText = new PrimaryText("I love Java");// створюємо початковий текст
+            Component primaryText = new PrimaryText("I love С# ");// створюємо початковий текст
 
-            Display(new UpperCaseText(new BoldText(new BoldText(new UnderLineText(new UpperCaseText(primaryText))))));
+            Display(new UpperCaseText(new BoldText(new BoldText(new BoldText(new UnderLineText(new UpperCaseText(primaryText)))))));// вивід на екран результату
             Console.ReadKey();
         }
     }
